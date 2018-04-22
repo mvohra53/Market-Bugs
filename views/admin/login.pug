@@ -1,0 +1,13 @@
+html
+    head
+        title Login Page
+        
+    body#bodyId.bodyClass
+    if error
+        p.error=error
+    form(action="/admin/login", method='post')
+        label Email ID 
+            input(type='email',name='email',class='form-control',required="required")
+        label Password
+            input(type='password',name='password',class='form-control',required="required")
+        button(type='submit') Login
